@@ -5,103 +5,138 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="style.css">
+    <link
+        href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css"
+        rel="stylesheet"
+    />
+
 </head>
 <body>
     <div class="dashboard">
         <div class="sidebar">
-            <h1>Dashboard</h1>
+            <h1>
+                <i class="mdi mdi-dashboard"></i>
+                Dashboard
+            </h1>
             <div class="nav">
-                <p>Home</p>
-                <p>Profile</p>
-                <p>Messages</p>
-                <p>History</p>
-                <p>Tasks</p>
-                <p>Communities</p>
+                <p class="nav-item">
+                    <i class="mdi mdi-home"></i>
+                    Home
+                </p>
+                <p class="nav-item">
+                    <i class="mdi mdi-account"></i>
+                    Profile
+                </p>
+                <p class="nav-item">
+                    <i class="mdi mdi-chat"></i>
+                    Messages
+                </p>
+                <p class="nav-item">
+                    <i class="mdi mdi-history"></i>
+                    History
+                </p>
+                <p class="nav-item">
+                    <i class="mdi mdi-clipboard-check-outline"></i>
+                    Tasks
+                </p>
+                <p class="nav-item">
+                    <i class="mdi mdi-account-group-outline"></i>
+                    Community
+                </p>
             </div>
             <div class="branding">
-                <p>Settings</p>
-                <p>Support</p>
-                <p>Privacy</p>
+                <p class="nav-item">
+                    <i class="mdi mdi-cog-outline"></i>
+                    Settings
+                </p>
+                <p class="nav-item">
+                    <i class="mdi mdi-lifebuoy"></i>
+                    Support
+                </p>
+                <p class="nav-item">
+                    <i class="mdi mdi-shield-lock-outline"></i>
+                    Privacy
+                </p>
             </div>
         </div>
-        <div class="col2">
-            <div class="header">
-                <div class="search">
-                    <input type="text" placeholder="Search">
-                </div>
-                <div class="user-row1">
-                    <h2>Aziz Umarov</h2>
-                </div>
-                <div class="user-row2">
-                    <p>Hi there,</p>
-                    <h1>Aziz Umarov (@aziz.u)</h1>
-                </div>
-                <div class="buttons">
-                    <button>New</button>
-                    <button>Upload</button>
-                    <button>Share</button>
-                </div>
+        <div class="header">
+            <div class="search">
+                <i class="mdi mdi-magnify"></i>
+                <input type="text" placeholder="Search">
             </div>
-            <div class="main-content">
-                <div class="project-container">
-                    <h1 class="project-header">Your Projects</h1>
-                    <div class="projects">
-                        <div class="project">
-                            <h2 class="project-title">Website Redesign</h2>
-                            <p>Revamping the company homepage to improve accessibility and reduce bounce rates. The design team is testing new layouts focused on faster navigation and better mobile performance.</p>
-                        </div>
-                        <div class="project">
-                            <h2 class="project-title">Analytics Dashboard</h2>
-                            <p>Developing a data visualization dashboard that shows sales performance, customer retention, and daily traffic insights. Beta testing starts next week.</p>
-                        </div>
-                        <div class="project">
-                            <h2 class="project-title">Employee Portal</h2>
-                            <p>Creating a secure internal platform for HR, payroll, and performance tracking. The login system is being integrated with company-wide single sign-on.</p>
-                        </div>
-                        <div class="project">
-                            <h2 class="project-title">Marketing Automation</h2>
-                            <p>Automating email campaigns and ad scheduling across social platforms. The project aims to increase engagement by 25% using behavioral analytics.</p>
-                        </div>
-                        <div class="project">
-                            <h2 class="project-title">Customer Feedback App</h2>
-                            <p>Building a mobile-friendly feedback tool that collects ratings and comments from customers. Insights will be visualized through weekly reports.</p>
-                        </div>
-                        <div class="project">
-                            <h2 class="project-title">Inventory Tracker</h2>
-                            <p>Designing a real-time inventory system that alerts warehouse teams about low stock and predicts restock needs based on sales trends.</p>
-                        </div>
+            <div class="user-row1">
+                <h2>Aziz Umarov</h2>
+                <button class="logout">Log Out <i class="mdi mdi-logout-variant"></i></p>
+            </div>
+            <div class="user-row2">
+                <p>Hi there,</p>
+                <h1>Aziz Umarov (@aziz.u)</h1>
+            </div>
+            <div class="buttons">
+                <button>New</button>
+                <button>Upload <i class="mdi mdi-cloud-upload-outline"></i></button>
+                <button>Share</button>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="project-container">
+                <h1 class="project-header">Your Projects</h1>
+                <div class="projects">
+                    <div class="project">
+                        <h2 class="project-title">Website Redesign</h2>
+                        <p>Revamping the company homepage to improve accessibility and reduce bounce rates. The design team is testing new layouts focused on faster navigation and better mobile performance.</p>
+                    </div>
+                    <div class="project">
+                        <h2 class="project-title">Analytics Dashboard</h2>
+                        <p>Developing a data visualization dashboard that shows sales performance, customer retention, and daily traffic insights. Beta testing starts next week.</p>
+                    </div>
+                    <div class="project">
+                        <h2 class="project-title">Employee Portal</h2>
+                        <p>Creating a secure internal platform for HR, payroll, and performance tracking. The login system is being integrated with company-wide single sign-on.</p>
+                    </div>
+                    <div class="project">
+                        <h2 class="project-title">Marketing Automation</h2>
+                        <p>Automating email campaigns and ad scheduling across social platforms. The project aims to increase engagement by 25% using behavioral analytics.</p>
+                    </div>
+                    <div class="project">
+                        <h2 class="project-title">Customer Feedback App</h2>
+                        <p>Building a mobile-friendly feedback tool that collects ratings and comments from customers. Insights will be visualized through weekly reports.</p>
+                    </div>
+                    <div class="project">
+                        <h2 class="project-title">Inventory Tracker</h2>
+                        <p>Designing a real-time inventory system that alerts warehouse teams about low stock and predicts restock needs based on sales trends.</p>
                     </div>
                 </div>
-                <div class="announcements">
-                    <h1>Announcements</h1>
-                    <div class="announce2">
-                        <h2 class="announce-title">Quarterly Meeting</h2>
-                        <p>The company-wide quarterly meeting is scheduled for November 25th at 10:00 AM. All departments should prepare a short update on progress and goals.</p>
-                        <h2 class="announce-title">New Feature Rollout</h2>
-                        <p>A major update is coming next week introducing instant notifications and team activity tracking. Brief downtime is expected overnight on Wednesday.</p>
-                        <h2 class="announce-title">Holiday Schedule</h2>
-                        <p>Please note that offices will be closed from December 24th to January 1st. Remote support will remain available for urgent client requests.</p>
-                                                                             </div>
-                </div>
-                <div class="trending">
-                    <h1>Trending</h1>
-                    <div class="trends">
-                        <div class="tweet">
-                            <p class="user">@maria.designs</p>
-                            <p>UI Kit reached 10k downloads.</p>
-                        </div>
-                        <div class="tweet">
-                            <p class="user">@dev_lucas</p>
-                            <p>New API boilerplate trending.</p>
-                        </div>
-                        <div class="tweet">
-                            <p class="user">@sophia.analytics</p>
-                            <p>Data tips post went viral.</p>
-                        </div>
-                        <div class="tweet">
-                            <p class="user">@daniel.codes</p>
-                            <p>New task app gaining traction.</p>
-                        </div>
+            </div>
+            <div class="announcements">
+                <h1>Announcements <i class="mdi mdi-bullhorn-outline"></i></h1>
+                <div class="announce2">
+                    <h2 class="announce-title">Quarterly Meeting</h2>
+                    <p>The company-wide quarterly meeting is scheduled for November 25th at 10:00 AM. All departments should prepare a short update on progress and goals.</p>
+                    <h2 class="announce-title">New Feature Rollout</h2>
+                    <p>A major update is coming next week introducing instant notifications and team activity tracking. Brief downtime is expected overnight on Wednesday.</p>
+                    <h2 class="announce-title">Holiday Schedule</h2>
+                    <p>Please note that offices will be closed from December 24th to January 1st. Remote support will remain available for urgent client requests.</p>
+                                                                         </div>
+            </div>
+            <div class="trending">
+                <h1>Trending <i class="mdi mdi-fire"></i></h1>
+                <div class="trends">
+                    <div class="tweet">
+                        <p class="user">@maria.designs</p>
+                        <p>UI Kit reached 10k downloads.</p>
+                    </div>
+                    <div class="tweet">
+                        <p class="user">@dev_lucas</p>
+                        <p>New API boilerplate trending.</p>
+                    </div>
+                    <div class="tweet">
+                        <p class="user">@sophia.analytics</p>
+                        <p>Data tips post went viral.</p>
+                    </div>
+                    <div class="tweet">
+                        <p class="user">@daniel.codes</p>
+                        <p>New task app gaining traction.</p>
                     </div>
                 </div>
             </div>
