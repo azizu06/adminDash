@@ -8,17 +8,17 @@ h1, h2 {
 }
 
 h1 {
-    font-size: 26px;
+    font-size: 28px;
 }
 
 h2 {
-    font-size: 22px;
+    font-size: 24px;
 }
 
 * {
     margin: 0;
     padding: 0;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .dashboard {
@@ -29,7 +29,7 @@ h2 {
 .header {
     display: grid;
     grid-column-start: 2;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 3fr 2fr;
     background-color: white;
     box-shadow: 0 1px 3px rgba(0,0,0,0.8);
     place-items: center;
@@ -40,11 +40,12 @@ h2 {
 
 .search {
     display: flex;
-    place-self: start;
     padding-top: 10px;
     padding-left: 50px;
+    padding-right: 50px;
     gap: 20px;
     align-items: center;
+    justify-content: center;
 }
 
 .search > i {
@@ -52,6 +53,27 @@ h2 {
     border-radius: 10px;
     background-color: #f1f5fe;
     padding: 4px 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.6);
+}
+
+.search > i:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    transition: all 0.2s ease;
+}
+
+.user-row1 > i {
+    font-size: 30px;
+    border-radius: 10px;
+    background-color: #f1f5fe;
+    padding: 4px 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.6);
+}
+
+.user-row1 > i:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    transition: all 0.2s ease;
 }
 
 input[type='text'] {
@@ -81,7 +103,9 @@ input[type='text'] {
 
 .buttons {
     display: flex;
-    gap: 20px;
+    gap: 50px;
+    width: 100%;
+    justify-content: flex-end;
 }
 
 button:hover {
@@ -155,7 +179,11 @@ button:hover {
 }
 
 .announce-title {
-    margin-bottom: -20px
+    margin-bottom: -40px
+}
+.a-text {
+    font-size: 20px;
+    margin-bottom: 20px;
 }
 
 .announce2 {
@@ -163,16 +191,15 @@ button:hover {
     background-color: white;
     border-radius: 10px;
     padding: 25px;
-    gap: 30px;
+    gap: 50px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.6);
 }
 
-.announcements h1, .trending h1 {
+.project-header, .announcements h1, .trending h1{
+    display: flex;
     margin-bottom: 20px;
-}
-
-.project-header{
-    margin-bottom: 20px;
+    gap: 15px;
+    align-items: center;
 }
 
 .project-container{
@@ -224,9 +251,31 @@ h1 > i {
 
 .user-row1 {
     display: flex;
-    border: 1px solid green;
     align-items: center;
-    gap: 30px;
+    gap: 75px;
+    padding: 10px;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.user-row2 {
+    display: flex;
+    gap: 20px
+}
+
+.aziz {
+    border-radius: 50px;
+}
+
+.aziz-text {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 400px;
+    align-content: center;
+}
+
+.user-row2 > p {
+    font-weight: 700;
 }
 
 .sidebar > h1 {
@@ -248,4 +297,26 @@ h1 > i {
 .project-icons > i:hover{
     color: #38bdf8;
     transition: all 0.2s ease;
+}
+
+.trend-item {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.tweet {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 300px;
+}
+
+img {
+    width: 80px;
+    height: 80px;
+}
+
+.user-row1 > img {
+    width: 65px;
+    height: 55px;
 }
