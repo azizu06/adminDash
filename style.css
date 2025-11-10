@@ -38,10 +38,25 @@ h2 {
     gap: 20px;
 }
 
+.search {
+    display: flex;
+    place-self: start;
+    padding-top: 10px;
+    padding-left: 50px;
+    gap: 20px;
+    align-items: center;
+}
+
+.search > i {
+    font-size: 30px;
+    border-radius: 10px;
+    background-color: #f1f5fe;
+    padding: 4px 8px;
+}
+
 input[type='text'] {
     width: 45vw;
-    height: 30px;
-    place-self: start;
+    height: 35px;
     border-radius: 10px;
     font-size: 20px;
     padding: 5px 20px;
@@ -64,6 +79,11 @@ input[type='text'] {
     box-shadow: 0 2px 4px rgba(79, 70, 229, 0.3);
 }
 
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
 button:hover {
     background-color: #3730a3;
     box-shadow: 0 4px 8px rgba(67,56,202,0.3);
@@ -76,7 +96,7 @@ button:hover {
     grid-template-columns: 3fr 1fr;
     padding: 20px;
     background-color: #f1f5fe;
-    gap: 30px;
+    gap: 75px;
 }
 
 .sidebar {
@@ -94,7 +114,7 @@ button:hover {
     font-weight: 500;
     color: #f3f4f6;
     height: 30px;
-    padding: 15px 50px;
+    padding: 15px 30px;
     width: 100%;
 }
 
@@ -105,7 +125,7 @@ button:hover {
 }
 
 .sidebar h1 {
-    place-self: center;
+    place-self: start;
     font-size: 32px;
     padding-top: 20px;
 }
@@ -117,7 +137,6 @@ button:hover {
 .branding {
     display: grid;
     grid-template-rows: repeat(3, 75px);
-    margin-top: 50px;
 }
 
 .trends {
@@ -126,6 +145,7 @@ button:hover {
     border-radius: 10px;
     padding: 20px;
     gap: 35px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.6);
 }
 
 .user {
@@ -144,6 +164,7 @@ button:hover {
     border-radius: 10px;
     padding: 25px;
     gap: 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.6);
 }
 
 .announcements h1, .trending h1 {
@@ -165,6 +186,8 @@ button:hover {
 }
 
 .project {
+    display: flex;
+    flex-direction: column;
     background-color: white;
     padding: 20px;
     border-radius: 10px;
@@ -184,4 +207,45 @@ button:hover {
 
 .project p {
     font-size: 20px;
+    flex: 1;
+}
+
+p > i {
+    font-size: 24px;
+}
+
+button > i {
+    font-size: 20px;
+}
+
+h1 > i {
+    font-size: 30px;
+}
+
+.user-row1 {
+    display: flex;
+    border: 1px solid green;
+    align-items: center;
+    gap: 30px;
+}
+
+.sidebar > h1 {
+    display: flex;
+    padding: 30px 30px;
+    gap: 20px;
+}
+
+.project-icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.project-icons > i {
+    font-size: 30px;
+}
+
+.project-icons > i:hover{
+    color: #38bdf8;
+    transition: all 0.2s ease;
 }
